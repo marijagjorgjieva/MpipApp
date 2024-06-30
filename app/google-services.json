@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "965149235246",
+    "project_id": "lllapp-ab720",
+    "storage_bucket": "lllapp-ab720.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:965149235246:android:7d7690de9535ca9aa167bf",
+        "android_client_info": {
+          "package_name": "com.example.livelaughlove"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyApfTZPk5aRiTPkSOZf2uQa_vbVTFv6qjQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

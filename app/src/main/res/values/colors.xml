@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="accent">#b73818</color>
+    <color name="accent2">#d86b37</color>
+    <color name="accent3">#d86b37</color>
+    <color name="darkeraccent">#b73818</color>
+    <color name="darkeraccent2">#b73818</color>
+    <color name="black">#000000</color>
+    <color name="blackground">#f9dac5</color>
+    <color name="lighterbcg">#f9dac5</color>
+    <color name="accent4">#b73818</color>
+    <color name="blue">#0002FC</color>
+    <color name="bckg">#ffffff</color>
+    <color name="transparent">#0000ffff</color>
+    <color name="background2">#f8d8c3</color>
+
+
+
+</resources>

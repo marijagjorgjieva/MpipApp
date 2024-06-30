@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_nav_graph"
+    app:startDestination="@id/introFragment">
+
+    <action
+        android:id="@+id/action_to_add_plant"
+        app:destination="@id/addPlantDialogFragment" />
+
+
+    <fragment
+        android:id="@+id/introFragment"
+        android:name="com.example.livelaughlove.view.fragments.Launch"
+        android:label="IntroFragment"
+        tools:layout="@layout/fragment_intro">
+        <action
+            android:id="@+id/action_introFragment_to_discoverFragment"
+            app:destination="@id/discoverFragment"
+            app:enterAnim="@android:animator/fade_in" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/discoverFragment"
+        android:name="com.example.livelaughlove.view.fragments.AllPlants"
+        android:label="DiscoverFragment"
+        tools:layout="@layout/fragment_discover">
+
+        <action
+            android:id="@+id/from_discover_to_actionToDetail"
+            app:destination="@id/detailFragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popExitAnim="@android:anim/slide_out_right" />
+        <action
+            android:id="@+id/action_discoverFragment_to_addPlantDialogFragment"
+            app:destination="@id/addPlantDialogFragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popEnterAnim="@android:anim/fade_in"
+            app:popExitAnim="@android:anim/slide_out_right" />
+
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/detailFragment"
+        android:name="com.example.livelaughlove.view.fragments.ItemF"
+        android:label="DetailFragment"
+        tools:layout="@layout/fragment_detail">
+        <argument
+            android:name="plant"
+            app:argType="com.example.livelaughlove.model.models.Plant" />
+    </fragment>
+    <fragment
+        android:id="@+id/addPlantDialogFragment"
+        android:name="com.example.livelaughlove.view.fragments.AddPlant"
+        android:label="AddPlantDialogFragment"
+        tools:layout="@layout/fragment_add_plant" />
+
+
+</navigation>
